@@ -1,0 +1,414 @@
+    1  cd /
+    2  df -h .
+    3  sudo su -
+    4  clear
+    5  vim .ssh/authorized_keys 
+    6  dpkg -l git
+    7  ssh-keygen -t rsa
+    8  ssh-copy-id  vagrant@172.17.177.101
+    9  ssh-copy-id  vagrant@172.17.177.102
+   10  sudo su -
+   11  ssh vagrant@172.17.177.101
+   12  ssh vagrant@172.17.177.102
+   13  cd /vagrant/
+   14  ll
+   15  ls -l
+   16  git init
+   17  git config --global init.defaultBranch main
+   18  git status
+   19  git remoto add origin git@github.com:onnismoreno/devops0124.git
+   20  git remote add origin git@github.com:onnismoreno/devops0124.git
+   21  git config pull.rebase true
+   22  cd /vagrant/
+   23  ll
+   24  ls -l
+   25  git remote -v 
+   26  cat /home/vagrant/.ssh/id_rsa.pub 
+   27  git pull origin main
+   28  ls -l
+   29  rm shadow doc01.txt passwd shadow
+   30  rm shadow doc01.txt passwd
+   31  ll
+   32  ls -l
+   33  rm hosts 
+   34  ll
+   35  ls -l
+   36  git branch 
+   37  git branch -m master main
+   38  git branch 
+   39  git status
+   40  git add .
+   41  git commit -m "Subindo alterações da maquina controle para o Github
+   42  git commit -m "Subindo alterações da maquina controle para o Github"
+   43  ll
+   44  ls -l
+   45  git status
+   46  git push origin main
+   47  id suporte
+   48  ansible --version
+   49  ansible
+   50  ansible --version
+   51  sudo vim /etc/locale.alias 
+   52  cd /vagrant/
+   53  ll
+   54  ls -l
+   55  mkdir ansible 
+   56  cd ansible/
+   57  ansible-doc  --list
+   58  nvim hosts
+   59  vim hosts
+   60  ansible db --i hosts -u vagrant --private-key /home/vagrant/.ssh/id_rsa -m shell -a "mkdir /tmp/teste"
+   61  ansible db -i hosts -u vagrant --private-key /home/vagrant/.ssh/id_rsa -m shell -a "mkdir /tmp/teste"
+   62  ssh db
+   63  ssh vagrant@172.17.177.102
+   64  vim hosts
+   65  nano hosts
+   66  ansible -vvv db -i hosts -m shell -a "mkdir /tmp/teste"
+   67  ssh 172.17.177.102
+   68  ansible -vvv db -i hosts -m shell -a "ls -l /tmp"
+   69  cd /vagrant/
+   70  cd ansible/
+   71  pwd
+   72  ls -l
+   73  vim hosts 
+   74  vim installdb.yml
+   75  nano installdb.yml
+   76  vim installdb.yml
+   77  ansible-playbook -i hosts  installdb.yml --check
+   78  ansible-playbook -i hosts  installdb.yml
+   79  ssh 172.17.177.102
+   80  vim installdb.yml
+   81  nano installdb.yml
+   82  vim installdb.yml
+   83  ansible-playbook -i hosts  installdb.yml --check
+   84  nano installdb.yml
+   85  vim installdb.yml
+   86  ansible-playbook -i hosts  installdb.yml --check
+   87  ansible-playbook -i hosts  installdb.yml 
+   88  ssh 172.17.177.102
+   89  vim installdb.yml
+   90  nano installdb.yml
+   91  vim installdb.yml
+   92  ansible-playbook -i hosts  installdb.yml 
+   93  ssh 172.17.177.102
+   94  vim installdb.yml
+   95  ansible-playbook -i hosts  installdb.yml 
+   96  vim installdb.yml
+   97  nano installdb.yml
+   98  vim installdb.yml
+   99  ansible-playbook -i hosts  installdb.yml 
+  100  ssh 172.17.177.102
+  101  nano installdb.yml
+  102  ssh 172.17.177.102
+  103  vim installdb.yml
+  104  nano installdb.yml
+  105  vim installdb.yml
+  106  ansible-playbook -i hosts  installdb.yml 
+  107  ssh 172.17.177.102
+  108  clear
+  109  vim facts.yml
+  110  nano facts.yml
+  111  vim facts.yml
+  112  ansible-playbook -i hosts facts.yml
+  113  clear
+  114  nano installweb.yml
+  115  vim installweb.yml
+  116  ansible-playbook -i hosts installweb.yml --check
+  117  ansible-playbook -i hosts installweb.yml 
+  118  vagrant ssh web
+  119  ssh 172.17.177.101
+  120  ls -l
+  121  cd /
+  122  ls -l
+  123  cd vagrant/
+  124  ls
+  125  cd ansible/
+  126  ll
+  127  ls- l
+  128  ls -l
+  129  vim installdb.yml 
+  130  vim installweb.yml 
+  131  nano installweb.yml 
+  132  vim installweb.yml 
+  133  mkdir vars
+  134  cd vars/
+  135  ll
+  136  ls -l
+  137  vim default.yml
+  138  nano default.yml
+  139  vim default.yml
+  140  cd ..
+  141  vim installweb.yml 
+  142  cd -
+  143  vim default.yml
+  144  cd -
+  145  vim installweb.yml 
+  146  ansible-playbook -i hosts installweb.yml  --check
+  147  nano installweb.yml 
+  148  ansible-playbook -i hosts installweb.yml  --check
+  149  nano installweb.yml 
+  150  vim installweb.yml 
+  151  ansible-playbook -i hosts installweb.yml  --check
+  152  ls -l
+  153  vim installweb.yml 
+  154  ls -l
+  155  cd -
+  156  ll
+  157  ls- l
+  158  sl -
+  159  ls -l
+  160  vim default.yml 
+  161  ansible-playbook -i hosts installweb.yml  --check
+  162  cd -
+  163  ansible-playbook -i hosts installweb.yml  --check
+  164  vim installweb.yml 
+  165  ansible-playbook -i hosts installweb.yml  --check
+  166  vim installweb.yml 
+  167  ansible-playbook -i hosts installweb.yml  --check
+  168  vim installweb.yml 
+  169  ansible-playbook -i hosts installweb.yml  --check
+  170  ansible-playbook -i hosts installweb.yml
+  171  nano installweb.yml 
+  172  vim installweb.yml 
+  173  ansible-playbook -i hosts installweb.yml  --check
+  174  ansible-playbook -i hosts installweb.yml 
+  175  vim installweb.yml 
+  176  nano installweb.yml 
+  177  vim installweb.yml 
+  178  ansible-playbook -i hosts installweb.yml  --check
+  179  ansible-playbook -i hosts installweb.yml 
+  180  mkdir files
+  181  cd files/
+  182  vim direxpress.conf
+  183  nano direxpress.conf
+  184  nano express.conf
+  185  nano hostsweb.conf
+  186  cd ..
+  187  nano installweb.yml 
+  188  vim installweb.yml 
+  189  ansible-playbook -i hosts installweb.yml  --check
+  190  ansible-playbook -i hosts installweb.yml
+  191  cd -
+  192  ls -l
+  193  vim express.conf
+  194  cd -
+  195  vim installweb.yml 
+  196  nano installweb.yml 
+  197  vim installweb.yml 
+  198  ansible-playbook -i hosts installweb.yml  --check
+  199  nano installweb.yml 
+  200  ansible-playbook -i hosts installweb.yml  --check
+  201  ansible-playbook -i hosts installweb.yml
+  202  git add .
+  203  git commit -m "Aula sobre Ansible"
+  204  git push origin main
+  205  cd /
+  206  cd vagrant/
+  207  git add .
+  208  git commit -m "Aula sobre Ansible"
+  209  git push origin main
+  210  git status
+  211  cd /vagrant/
+  212  nano installdocker.yml
+  213  exit
+  214  docker --version
+  215  docker pull ubuntu
+  216  docker images
+  217  docker images --format "{{.Repository}}  - {{.Size}}"
+  218  docker history ubuntu:latest
+  219  docker image
+  220  docker image inspect ubuntu:latest
+  221  docker ps
+  222  docker run ubuntu
+  223  docker ps
+  224  docker ps -a
+  225  docker inspect ce5a33315a05
+  226  docker start ce5a33315a05
+  227  docker ps
+  228  docker ps -a
+  229  docker run  -it ubuntu
+  230  docker ps
+  231  docker rm ce5a33315a05
+  232  docker ps -a
+  233  docker -v rm $(docker ps -a -q)
+  234  docker ps -a
+  235  docker rmi ubuntu
+  236  docker iamge
+  237  docker images
+  238  docker run nginx
+  239  docker ps -a
+  240  docker rm 1e62d0eefbc8
+  241  docker run -d nginx
+  242  docker ps
+  243  docker rm 2413fdb0600d
+  244  docker rm -f  2413fdb0600d
+  245  docker ps
+  246  docker ps -a
+  247  cd /vagrant/
+  248  ls -l
+  249  clear
+  250  docker ps
+  251  docker ps -a
+  252  docker run -d -P --name web1 nginx
+  253  docker ps
+  254  docker port web1
+  255  docker inspect web1
+  256  sudo iptables -t nat -L
+  257  docker stop -t 0 web1
+  258  docker rm web1
+  259  docker ps -a
+  260  docker run -d -p 32300:80 --name web1 nginx
+  261  docker ps -a
+  262  docker run --detach --name mariadb --env MARIADB_USER=teste --env MARIADB_PASSWORD=123456 --env MARIADB_DATABASE=dbteste --env MARIADB_ROOT_PASSWORD=LinuxForce01  mariadb:latest
+  263  docker exec -it mariadb bash
+  264  docker volume ls
+  265  docker volume create  dadosweb
+  266  docker volume ls
+  267  docker volume inspect dadosweb
+  268  cd /var/lib/docker/volumes/dadosweb/_data
+  269  docker run -d -p 8000:80  -v dadosweb:/usr/share/nginx/html --name web2 nginx
+  270  docker rm -f $(docker ps -q -a)
+  271  docker ps -a
+  272  nano Dockerfileweb
+  273  vim Dockerfileweb
+  274  cd /var/
+  275  sudo mkdir /var/git
+  276  cd /var/git/
+  277  sudo wget https://github.com/rogerramossilva/devops/raw/master/express.zip
+  278  ls -l
+  279  sudo apt install unzip
+  280  sudo unzip express.zip 
+  281  ls
+  282  sudo mv express  /vagrant/web
+  283  docker ps
+  284  cd /vagrant/
+  285  ll
+  286  ls
+  287  docker build -f Dockerfileweb -t onnisv/web  .
+  288  docker images
+  289  docker history onnisv/web:latest
+  290  docker run -d -p 8000:80 --name web onnisv/web
+  291  docker ps
+  292  nano Dockerfileweb
+  293  docker build -f Dockerfileweb -t onnisv/web  .
+  294  docker history onnisv/web:latest
+  295  cd /vagrant/
+  296  nano Dockerfiledb
+  297  docker ps
+  298  docker ps -a
+  299  docker images
+  300  nano Dockerfiledb
+  301  mkdir db 
+  302  docker run -d -p 8000:80 --name web onnisv/web
+  303  docker run e71a4746edf9
+  304  docker images
+  305  cd fb
+  306  cd db
+  307  docker start e71a4746edf9
+  308  docker images
+  309  docker ps
+  310  docker ps -a
+  311  docker run -d -p 8000:80 --name web onnisv/web2
+  312  wget https://github.com/rogerramossilva/linux/raw/master/backup.sql
+  313  ls -l
+  314  cd ..
+  315  ls -l
+  316  docker build -f Dockerfilewdb -t onnisv/db  .
+  317  docker build -f Dockerfiledb -t onnisv/db  .
+  318  docker images
+  319  docker run -d -p 8000:80 --name web onnisv/web
+  320  docker rm e71a4746edf9
+  321  docker -rm e71a4746edf9
+  322  docker -rmi e71a4746edf9
+  323  docker run -d -p 3306:3306 onnisv/db
+  324  docker ps
+  325  history 
+  326  docker images
+  327  docker rm onnisv/web
+  328  docker ps
+  329  docker exec -it d1e10bfd9897 bash
+  330  docker ps
+  331  docker images
+  332  history 
+  333  docker images
+  334  docker run onnisv/web
+  335  docker up web
+  336  docker exec -it web bash
+  337  docker run web
+  338  docker inspect df5b1e524d1c
+  339  docker ps
+  340  docker stop ber
+  341  docker stop web
+  342  docker rm web
+  343  docker ps
+  344  docker images
+  345  cd web/
+  346  ls
+  347  ls -l
+  348  nano vim backup.php
+  349  nano backup.php
+  350  cd ..
+  351  ls
+  352  docker build -f Dockerfileweb  -t onnisv/web .
+  353  docker rm -f $(docker ps -q -a)
+  354  docker ps
+  355  docker ps -a
+  356  docker network ls
+  357  docker inspect bridge
+  358  docker network create  --subnet=10.1.1.0/24 --driver bridge redelocal
+  359  docker network ls
+  360  docker inspect redelocal
+  361  docker run -d --name web --network redelocal -p 8000:80 onnisv/web
+  362  docker run -d --name db --network redelocal -p 3306:3306 onnisv/db
+  363  docker ps
+  364  clear
+  365  docker ps
+  366  docker inspect db
+  367  docker inspect web
+  368  clear
+  369  docker images
+  370  docker login
+  371  docker push onnisv/web
+  372  docker push onnisv/db
+  373  git status
+  374  git add .
+  375  git commit -m "Arquivos do Dockerfiles "
+  376  git push origin main
+  377  nano installdocker.yml
+  378  vim installdocker.yml
+  379  nano installdocker.yml
+  380  cd /vagrant/
+  381  ls -l
+  382  docker-compose version
+  383  cd /vagrant/
+  384  nano Dockerfilenginx
+  385  ls -la
+  386  ls -l
+  387  rm *.log
+  388  ls -l
+  389  mkdir nginx
+  390  cd nginx/
+  391  ls
+  392  wget https://github.com/rogerramossilva/linux/raw/master/nginx.conf
+  393  ls
+  394  vim nginx.conf 
+  395  nano nginx.conf 
+  396  cd ..
+  397  pwd
+  398  wget https://github.com/rogerramossilva/linux/raw/master/docker-compose.yml
+  399  nano docker-compose.yml 
+  400  docker ps -a
+  401  docker rm -f $(docker ps -q -a)
+  402  docker images
+  403  docker image rm onnisv/web
+  404  docker image rm onnisv/db
+  405  docker network rm redelocal
+  406  docker ps -a
+  407  docker images
+  408  history 
+  409  docker ps
+  410  docker ps -a
+  411  cd /vagrant/
+  412  ls -l
+  413  history 
+  414  history > history.txt
