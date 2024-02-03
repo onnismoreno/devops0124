@@ -1,0 +1,12 @@
+Log created: 2024-02-02T02:15:06.553771000Z
+Process ID:  93298 (0x16c72)
+Parent PID:  1 (0x1)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: controle
+Arg[3]: --startvm
+Arg[4]: e1813dc8-6cd7-4712-b1be-30ac1e6fa760
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
